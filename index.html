@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+    <title>Notes manager</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-content">
+            <a href="./index.html">
+                <div class="title">&#9998 Notes manager</div>
+            </a>
+            <div class="navbar-buttons">
+                <a href="./register.html"><button class="sign-up">Registrarse</button></a>
+                <button class="log-in">Iniciar sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="background">
+            <div class="container">
+                <div class="text-box">Organíza tus tareas con Notes Manager</div>
+                <a href="./register.html"><button class="register-page-button">Registrate gratis</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="access-form">
+            <div class="access-form-title">
+                <h3>Iniciar sesión</h3>
+                <div class="close-button">x</div> 
+            </div>
+
+            <div class="inputs">
+                <label>Correo electrónico</label>
+                <input id="email-input" type="email" placeholder="Email" autofocus>
+            </div>
+
+            <div class="inputs">
+                <label>Contraseña</label>
+                <input id="password-input" type="password" placeholder="Contraseña">
+            </div>
+            <button class="access-button">Entrar</button>
+        </div>
+
+    </div>
+    <script src="./src/index.js" type="module"></script>
+</body>
+
+</html>
