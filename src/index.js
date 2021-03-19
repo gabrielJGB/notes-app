@@ -7,6 +7,10 @@ const firebaseConfig = {
     appId: "1:238939350494:web:79a3109cd59343c7ca294f"
 };
 
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+
 firebase.initializeApp(firebaseConfig);
 
 const logInButton = document.querySelector('.log-in');
